@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
  */
+.status {
+
+	border-bottom: solid 1px gray;
+
+	padding : 5px 0;
+}
+
+.status p {
+
+	padding : 4px 0;
+
+}

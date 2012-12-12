@@ -1,0 +1,24 @@
+
+
+
+<div class="page-header">
+<h1> All Stat's</h1>
+
+<div class= "btn btn-primary"><%=link_to "Post a New Status", new_status_path, :class => "white_tag"%></div>
+</div>
+<% @statuses.each do |status| %>
+<div class="status">
+ <p><strong> <%=status.name%></strong> : <%=status.cotent%> </p>
+ <i> Created at :<%=time_ago_in_words(status.created_at)%> ago</i>
+
+<div class="meta">
+   <%= link_to "Show", status%> |
+   <span class="admin">
+    <%= link_to "Edit", edit_status_path(status)%>
+  </span>
+
+ </div>
+</div>
+
+  <%end%>
+

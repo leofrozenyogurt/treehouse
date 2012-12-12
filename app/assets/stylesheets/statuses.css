@@ -1,0 +1,35 @@
+
+.status {
+
+	border-bottom: solid 1px gray;
+
+	padding : 5px 0;
+}
+
+.status p {
+
+	margin : 2px 0;
+
+}
+
+.status.hover{
+	background:#F1F0F0;
+}
+
+.status .admin {
+	display:none;
+}
+
+.status.hover .admin{
+	display:inline;
+}
+
+.page-header{
+	padding-bottom: 9px;
+	margin: 1px 0 30px;
+	border-bottom: 1px solid #EEE;
+}
+
+.white_tag{
+	color:white;
+}
