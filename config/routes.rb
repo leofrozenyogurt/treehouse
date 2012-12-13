@@ -1,5 +1,11 @@
 Treehouse::Application.routes.draw do
+  devise_for :users
+
   resources :statuses
+
+  resources :users 
+  match 'users/dashboard' => 'users#show'
+
 
 
   # The priority is based upon order of creation:
