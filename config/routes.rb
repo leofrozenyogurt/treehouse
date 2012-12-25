@@ -1,10 +1,11 @@
 Treehouse::Application.routes.draw do
   devise_for :users
+   match 'users/:id' => 'users#show'
 
   resources :statuses
 
   resources :users 
-  match 'users/dashboard' => 'users#show'
+
 
 
 

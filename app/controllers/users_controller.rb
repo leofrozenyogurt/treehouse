@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		@wudup= "wudup"
+		@user=User.find(params[:id])
+		
 	end
 end

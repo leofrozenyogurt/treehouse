@@ -2,7 +2,6 @@
 
 <p>
   <b>Name:</b>
-  <%= @status.name %>
 </p>
 
 <p>
@@ -10,6 +9,9 @@
   <%= @status.cotent %>
 </p>
 
+  <b>Category:</b>
+  <%= @status.category %>
+</p>
 
 <%= link_to 'Edit', edit_status_path(@status) %> |
 <%= link_to 'Back', statuses_path %>
